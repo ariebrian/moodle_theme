@@ -59,8 +59,8 @@ require_once(dirname(__FILE__) . '/includes/header.php');  ?>
     ?>
 </div>
     <?php
-    $whotitle = theme_klass_get_setting('whoweare_title');
-    $whodesc = theme_klass_get_setting('whoweare_description');
+    // $whotitle = theme_klass_get_setting('whoweare_title');
+    // $whodesc = theme_klass_get_setting('whoweare_description');
     if (!empty($whotitle) || !empty($whodesc)) {
 ?>
 <!--Custom theme slider-->

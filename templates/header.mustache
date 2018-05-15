@@ -17,12 +17,12 @@
 {{!
     Page header.
 }}
-<header id="header" role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+<header id="header" role="banner" class="pos-f-t navbar navbar-full navbar-dark bg-faded navbar-sticky-top moodle-has-zindex">
 
     <div class="container navbar-nav">
 
         <div data-region="drawer-toggle">
-            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true" class="hidden-xl-down">&#9776;</span><span class="sr-only hidden-xl-down">{{#str}}expand, core{{/str}}</span>
+            <button style="padding-top: 15px;" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true" class="hidden-xl-down">&#9776;</span><span class="sr-only hidden-xl-down">{{#str}}expand, core{{/str}}</span>
 			<span aria-hidden="true"> </span>
 		    <span aria-hidden="true"> </span>
 		    <span aria-hidden="true"> </span>
@@ -30,16 +30,19 @@
         </div>
 
         <!-- user_menu -->
+        <!-- <span style="padding-top: 15px;"></span> -->
+        <div style="padding-top: 10px">
         {{{ output.user_menu }}}
+        </div>
 
         <!-- navbar_plugin_output -->
         {{{ output.navbar_plugin_output }}}
 
         <!-- search_box -->
-        <span class="top-search">
+        <div class="top-search">
         {{{ output.search_box }}}
-        </span>
-        <div id="logo">
+        </div>
+        <div id="logo" style="padding-top: 5px; margin-bottom: 5px;">
                 <a href="{{{ config.wwwroot }}}/?redirect=0" class="navbar-brand {{# logourl }}has-logo{{/ logourl }}
             {{^ logourl }}
                 hidden-sm-down

@@ -140,6 +140,7 @@ h6 {
     font-size: 16px;
 }
 #header {
+
     background: $color_allports_approx;
     max-height: none;
     border-bottom: 0;
@@ -4588,6 +4589,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 #page {
     margin-top: 20px;
+    paddint-top: 50px;
     .card .card-block .context-header-settings-menu .action-menu .menubar .dropdown-menu {
         .dropdown-item {
             padding: 0;
